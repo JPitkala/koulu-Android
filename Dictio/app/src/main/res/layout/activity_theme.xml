@@ -4,15 +4,8 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SELECT THEME" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="gotoTheme1"
         android:text="Theme 1" />
 </LinearLayout>
