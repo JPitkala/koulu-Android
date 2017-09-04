@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_above="@id/button"
         android:text=" " />
 
     <Button
@@ -18,11 +17,14 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_below="@id/textToSpeak"
         android:text="Say word" />
 
     <Button
         android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/say"
         android:text="Choose word" />
     </RelativeLayout>
