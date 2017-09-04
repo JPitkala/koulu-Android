@@ -10,13 +10,20 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_above="@id/button"
-        android:text="Does it work" />
+        android:text=" " />
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:onClick="gotoSelectTheme"
-        android:text="Button" />
-</RelativeLayout>
+        android:text="Say word" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose word" />
+    </RelativeLayout>
