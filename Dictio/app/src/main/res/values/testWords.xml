@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="testwords">
+        <item>word one</item>
+        <item>word two</item>
+        <item>word three</item>
+        <item>abiding</item>
+        <item>discord</item>
+        <item>misplaced</item>
+        <item>annoyed</item>
+        <item>boat</item>
+        <item>unable</item>
+        <item>knowledgeable</item>
+        <item>exciting</item>
+        <item>floorboard</item>
+    </string-array>
+</resources>
