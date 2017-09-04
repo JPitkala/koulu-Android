@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Dictio</string>
     <string name="promentor">PROMENTOR SOLUTIONS</string>
+    <string name="aihe">VALITSE AIHE</string>
+    <string name="teema1">Aihe 1</string>
+    <string name="teema2">Aihe 2</string>
+    <string name="teema3">Aihe 3</string>
 </resources>
