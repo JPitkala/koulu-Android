@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.Locale;
 
 public class theme1 extends AppCompatActivity {
 
     TextToSpeech t;
     Button  button;
+    Text text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class theme1 extends AppCompatActivity {
             }
         });
     }
+
+
 
     public void onPause(){
         if(t !=null){
