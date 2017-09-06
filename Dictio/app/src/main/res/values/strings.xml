@@ -5,4 +5,7 @@
     <string name="teema1">Aihe 1</string>
     <string name="teema2">Aihe 2</string>
     <string name="teema3">Aihe 3</string>
+    <string name="choose">Choose word</string>
+    <string name="say">Say word</string>
+    <string name="empty">" "</string>
 </resources>

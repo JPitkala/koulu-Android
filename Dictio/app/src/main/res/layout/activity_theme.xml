@@ -9,16 +9,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text=" " />
+        android:text="@string/empty" />
 
     <Button
         android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/textToSpeak"
-        android:text="Say word" />
+        android:text="@string/say"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
 
     <Button
         android:id="@+id/choose"
@@ -26,5 +27,5 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/say"
-        android:text="Choose word" />
+        android:text="@string/choose" />
     </RelativeLayout>
