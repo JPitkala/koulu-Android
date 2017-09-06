@@ -19,4 +19,9 @@ public class selectThemeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gotoSpell(View view){
+        Intent intent2 = new Intent(this, theme2.class);
+        startActivity(intent2);
+    }
+
 }
