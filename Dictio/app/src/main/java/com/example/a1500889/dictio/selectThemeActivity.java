@@ -24,4 +24,9 @@ public class selectThemeActivity extends AppCompatActivity {
         startActivity(intent2);
     }
 
+    public void gotoTheme3(View view){
+        Intent intent3 = new Intent(this, theme3.class);
+        startActivity(intent3);
+    }
+
 }

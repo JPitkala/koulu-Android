@@ -16,17 +16,21 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity">
-
         </activity>
+
         <activity android:name=".selectThemeActivity">
-
         </activity>
+
         <activity android:name=".theme1">
         </activity>
 
         <activity android:name=".theme2">
+        </activity>
+
+        <activity android:name=".theme3">
         </activity>
     </application>
 
