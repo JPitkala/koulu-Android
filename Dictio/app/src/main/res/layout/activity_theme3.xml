@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/layout1">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textToSpeak"
@@ -10,17 +9,16 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/empty" />
+        android:text=" " />
 
     <Button
         android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/textToSpeak"
-        android:text="@string/say"
-        android:layout_alignEnd="@+id/choose"
-        android:layout_alignStart="@+id/choose" />
+        android:text="Say word" />
 
     <Button
         android:id="@+id/choose"
@@ -37,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:textSize="26sp"
+        android:textSize="26dp"
         android:textStyle="normal" />
 
     <TextView
@@ -45,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/tap_on_mic"
-        android:textSize="15sp"
+        android:textSize="15dp"
         android:textStyle="normal"
         android:id="@+id/textView2" />
 
@@ -57,5 +55,4 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:text="Bress meh" />
-
-    </RelativeLayout>
+</RelativeLayout>
