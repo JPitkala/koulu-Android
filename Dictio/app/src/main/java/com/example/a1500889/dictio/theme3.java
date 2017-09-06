@@ -42,8 +42,6 @@ public class theme3 extends AppCompatActivity {
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
 
-        txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
-        btnSpeak = (Button) findViewById(R.id.btnSpeak);
 
         t = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -84,6 +82,8 @@ public class theme3 extends AppCompatActivity {
         });
     }
 
+
+
     private void promptSpeechInput() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
@@ -123,20 +123,8 @@ public class theme3 extends AppCompatActivity {
         }
     }
 
-
-
-
-
-
-    public void onPause(){
-        if(t !=null){
-            t.stop();
-            t.shutdown();
-        }
-        super.onPause();
     }
 
 
 
 
-}
