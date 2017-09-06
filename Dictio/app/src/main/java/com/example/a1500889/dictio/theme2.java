@@ -69,7 +69,8 @@ public class theme2 extends AppCompatActivity {
 
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    txtSpeechInput.setText(result.get(0));
+                    String[] y = result.get(0).split(" ");
+                    txtSpeechInput.setText(y[0]);
                 }
                 break;
             }
