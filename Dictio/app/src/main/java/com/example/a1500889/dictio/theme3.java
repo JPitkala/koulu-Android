@@ -7,6 +7,7 @@ package com.example.a1500889.dictio;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -42,6 +43,19 @@ public class theme3 extends AppCompatActivity {
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
 
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new         Intent(getApplicationContext(),selectThemeActivity.class));
+            }
+        });
 
         t = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
