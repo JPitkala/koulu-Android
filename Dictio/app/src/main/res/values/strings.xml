@@ -2,8 +2,8 @@
     <string name="app_name">Dictio</string>
     <string name="promentor">PROMENTOR SOLUTIONS</string>
     <string name="topic">CHOOSE TOPIC</string>
-    <string name="topic1">Topic 1</string>
-    <string name="topic2">Topic 2</string>
+    <string name="topic1">WORDS</string>
+    <string name="topic2">SENTENCES</string>
     <string name="topic3">Topic 3</string>
 
     <string name="choose">Choose word</string>
