@@ -7,9 +7,10 @@
     <string name="topic3">Topic 3</string>
 
     <string name="choose">Choose word</string>
-    <string name="say">Say word</string>
+    <string name="say">Listen word</string>
     <string name="empty">" "</string>
     <string name="topic_selection">Topics</string>
+    <string name="Say_Word">Say Word</string>
 
     <string name="speech_prompt">Say something&#8230;</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
