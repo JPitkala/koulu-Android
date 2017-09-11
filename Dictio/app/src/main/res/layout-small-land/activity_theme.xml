@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/layout1">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -12,7 +13,6 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
 
     <TextView
         android:id="@+id/textToSpeak"
@@ -26,11 +26,11 @@
         android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/textToSpeak"
         android:text="@string/say"
-        android:textSize="40sp" />
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
 
     <Button
         android:id="@+id/choose"
@@ -38,8 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/say"
-        android:text="@string/choose"
-        android:textSize="40sp" />
+        android:text="@string/choose" />
 
     <TextView
         android:id="@+id/txtSpeechInput"
@@ -48,7 +47,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:textSize="40sp"
+        android:textSize="26sp"
         android:textStyle="normal" />
 
     <TextView
@@ -58,7 +57,7 @@
         android:layout_marginTop="20dp"
         android:layout_below="@id/toolbar"
         android:text="@string/tap_on_mic"
-        android:textSize="40sp"
+        android:textSize="15sp"
         android:textStyle="normal"
         android:id="@+id/textView2" />
 
@@ -66,10 +65,10 @@
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:text="Bress meh"
-        android:textSize="40sp" />
+        android:text="Bress meh" />
+
 </RelativeLayout>

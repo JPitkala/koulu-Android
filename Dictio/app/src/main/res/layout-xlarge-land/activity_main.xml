@@ -26,7 +26,7 @@
         android:elevation="0dp"
         android:onClick="gotoSelectTheme"
         android:text="@string/topic_selection"
-        android:textSize="30sp"
+        android:textSize="90sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

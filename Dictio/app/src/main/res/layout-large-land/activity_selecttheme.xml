@@ -18,20 +18,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="40sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/topic" />
+        android:text="@string/topic"
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20sp"
-        android:layout_marginEnd="20sp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
         android:onClick="gotoTheme1"
-        android:text="@string/topic1" />
+        android:text="@string/topic1"
+        android:textSize="60sp" />
 
     <Button
         android:id="@+id/button3"
@@ -40,10 +43,11 @@
         android:layout_below="@id/button"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="20sp"
-        android:layout_marginStart="20sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
         android:onClick="gotoSpell"
-        android:text="@string/topic2" />
+        android:text="@string/topic2"
+        android:textSize="60sp" />
 
     <Button
         android:id="@+id/button4"
@@ -52,8 +56,9 @@
         android:layout_below="@id/button3"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="20sp"
-        android:layout_marginStart="20sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
         android:onClick="gotoTheme3"
-        android:text="@string/topic3" />
+        android:text="@string/topic3"
+        android:textSize="60sp" />
 </RelativeLayout>
