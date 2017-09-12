@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">Dictio</string>
     <string name="promentor">PROMENTOR SOLUTIONS</string>
-    <string name="aihe">VALITSE AIHE</string>
-    <string name="teema1">Aihe 1</string>
-    <string name="teema2">Aihe 2</string>
-    <string name="teema3">Aihe 3</string>
+    <string name="topic">CHOOSE TOPIC</string>
+    <string name="topic1">WORDS</string>
+    <string name="topic2">SENTENCES</string>
+    <string name="topic3">Topic 3</string>
+
+    <string name="choose">Choose word</string>
+    <string name="say">Listen word</string>
+    <string name="empty">" "</string>
+    <string name="topic_selection">Topics</string>
+    <string name="Say_Word">Say Word</string>
 
     <string name="choose">Choose word</string>
     <string name="say">Say word</string>
