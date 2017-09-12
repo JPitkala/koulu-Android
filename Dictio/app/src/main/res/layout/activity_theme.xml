@@ -66,9 +66,9 @@
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/txtSpeechInput"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:text="@string/Say_Word" />
 
