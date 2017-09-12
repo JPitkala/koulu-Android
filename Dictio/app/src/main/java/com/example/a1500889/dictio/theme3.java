@@ -4,6 +4,7 @@ package com.example.a1500889.dictio;
  * Created by a1500908 on 6.9.2017.
  */
 
+import android.graphics.Color;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class theme3 extends AppCompatActivity {
     Random random = new Random();
     TextView txtSpeechInput;
     Button btnSpeak;
+    int convoStep;
     final int REQ_CODE_SPEECH_INPUT = 100;
 
 
@@ -42,6 +44,7 @@ public class theme3 extends AppCompatActivity {
         text = (TextView)findViewById(R.id.textToSpeak);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
+        convoStep = 0;
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -69,22 +72,15 @@ public class theme3 extends AppCompatActivity {
         buttonSay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String[] Convo = getResources().getStringArray(R.array.testConvo);
+                String selected = Convo[convoStep];
+                text.setText(selected);
                 String toSpeak = text.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
                 t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        buttonChoose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String[] TestWords = getResources().getStringArray(R.array.testwords);
-                int randselect = random.nextInt((TestWords.length - 0));
-                String selected = TestWords[randselect];
-                text.setText(selected);
-
-            }
-        });
 
 
         btnSpeak.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +93,20 @@ public class theme3 extends AppCompatActivity {
     }
 
 
+
+    public void checkInput() {
+        String[] ConvoCorrect = getResources().getStringArray(R.array.testConvoCorrect);
+        String input = txtSpeechInput.getText().toString();
+        String correct = ConvoCorrect[convoStep];
+        if (correct.equalsIgnoreCase(input)) {
+            convoStep = convoStep + 1;
+
+        } else {
+            String toSpeak = "Sorry i do not understand";
+            Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
+            t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+        }
+    }
 
     private void promptSpeechInput() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -128,9 +138,9 @@ public class theme3 extends AppCompatActivity {
 
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    String[] y = result.get(0).split(" ");
-                    txtSpeechInput.setText(y[0]);
+                    txtSpeechInput.setText(result.get(0));
                 }
+                checkInput();
                 break;
             }
 
