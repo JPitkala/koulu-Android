@@ -100,7 +100,7 @@ public class theme3 extends AppCompatActivity {
         String correct = ConvoCorrect[convoStep];
         if (correct.equalsIgnoreCase(input)) {
             convoStep = convoStep + 1;
-            
+
         } else {
             String toSpeak = "Sorry i do not understand";
             Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
