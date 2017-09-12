@@ -9,8 +9,10 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.ActivityNotFoundException;
@@ -31,6 +33,7 @@ public class theme3 extends AppCompatActivity {
     Random random = new Random();
     TextView txtSpeechInput;
     Button btnSpeak;
+    RelativeLayout layout;
     int convoStep;
     final int REQ_CODE_SPEECH_INPUT = 100;
 
@@ -39,11 +42,12 @@ public class theme3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme3);
-        buttonSay=(Button)findViewById(R.id.say);
+        buttonSay=(Button)findViewById(R.id.start);
         buttonChoose = (Button)findViewById(R.id.choose);
         text = (TextView)findViewById(R.id.textToSpeak);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
+        layout = (RelativeLayout) findViewById(R.id.layout3);
         convoStep = 0;
 
 
@@ -72,12 +76,7 @@ public class theme3 extends AppCompatActivity {
         buttonSay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] Convo = getResources().getStringArray(R.array.testConvo);
-                String selected = Convo[convoStep];
-                text.setText(selected);
-                String toSpeak = text.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
-                t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                conversation();
             }
         });
 
@@ -100,12 +99,26 @@ public class theme3 extends AppCompatActivity {
         String correct = ConvoCorrect[convoStep];
         if (correct.equalsIgnoreCase(input)) {
             convoStep = convoStep + 1;
-
+            if (convoStep == getResources().getStringArray(R.array.testConvo).length){
+                layout.setBackgroundColor(Color.GREEN);
+            }else {
+                conversation();
+            }
         } else {
             String toSpeak = "Sorry i do not understand";
             Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
             t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
         }
+    }
+
+    public void conversation(){
+        String[] Convo = getResources().getStringArray(R.array.testConvo);
+        String selected = Convo[convoStep];
+        text.setText(selected);
+        String toSpeak = text.getText().toString();
+        Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
+        t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+
     }
 
     private void promptSpeechInput() {
