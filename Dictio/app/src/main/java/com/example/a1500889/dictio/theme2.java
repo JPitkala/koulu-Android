@@ -77,9 +77,9 @@ public class theme2 extends AppCompatActivity {
         buttonChoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] TestWords = getResources().getStringArray(R.array.testwords);
-                int randselect = random.nextInt((TestWords.length - 0));
-                String selected = TestWords[randselect];
+                String[] TestPhrases = getResources().getStringArray(R.array.testphrases);
+                int randselect = random.nextInt((TestPhrases.length - 0));
+                String selected = TestPhrases[randselect];
                 text.setText(selected);
 
             }
@@ -101,7 +101,7 @@ public class theme2 extends AppCompatActivity {
     public void checkInput() {
         String input = txtSpeechInput.getText().toString();
         String correct = text.getText().toString();
-        if (correct.equals(input)) {
+        if (correct.equalsIgnoreCase(input)) {
             layout.setBackgroundColor(Color.GREEN);
         } else {
             layout.setBackgroundColor(Color.RED);
