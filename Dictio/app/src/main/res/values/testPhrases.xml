@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="testphrases">
+        <item>Please come in</item>
+        <item>Go up the stairs</item>
+        <item>Sit here and watch</item>
+        <item>I will take two steps to the right</item>
+    </string-array>
+
+
+
+
+</resources>
