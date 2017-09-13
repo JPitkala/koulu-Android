@@ -94,12 +94,17 @@ public class theme3 extends AppCompatActivity {
 
     public void checkInput() {
         String[] ConvoCorrect = getResources().getStringArray(R.array.testConvoCorrect);
+        String[] ConvoCorrectAlt = getResources().getStringArray(R.array.testConvoCorrectAlt);
+        String[] ConvoCorrectAlt2 = getResources().getStringArray(R.array.testConvoCorrectAlt2);
         String input = txtSpeechInput.getText().toString();
         String correct = ConvoCorrect[convoStep];
-        if (correct.equalsIgnoreCase(input)) {
+        String correctAlt = ConvoCorrectAlt[convoStep];
+        String correctAlt2 = ConvoCorrectAlt2[convoStep];
+        if (correct.equalsIgnoreCase(input)||correctAlt.equalsIgnoreCase(input)||correctAlt2.equalsIgnoreCase(input)) {
             convoStep = convoStep + 1;
             if (convoStep == getResources().getStringArray(R.array.testConvo).length){
                 layout.setBackgroundColor(Color.GREEN);
+                btnSpeak.setEnabled(false);
             }else {
                 conversation();
             }
