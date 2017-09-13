@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/tap_on_mic"
         android:textSize="40sp"
         android:textStyle="normal"
@@ -48,6 +48,37 @@
         android:layout_marginTop="15dp"
         android:text="@string/Say_Word"
         android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textToSpeak"
+        android:text="@string/say"
+        android:textSize="40sp"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/say"
+        android:text="@string/choose"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textToSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/btnSpeak"
+        android:text="@string/empty"
+        android:textSize="30sp" />
 
 
 </RelativeLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:id="@+id/layout1">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,23 +15,50 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
+        android:id="@+id/textToSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/empty" />
+
+    <Button
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textToSpeak"
+        android:text="@string/say"
+        android:textSize="40sp"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/say"
+        android:text="@string/choose"
+        android:textSize="40sp" />
+
+    <TextView
         android:id="@+id/txtSpeechInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView2"
         android:layout_marginTop="150dp"
-        android:textSize="26sp"
+        android:textSize="40sp"
         android:textStyle="normal" />
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/toolbar"
         android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar"
         android:text="@string/tap_on_mic"
         android:textSize="40sp"
         android:textStyle="normal"
@@ -41,12 +68,11 @@
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtSpeechInput"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:text="@string/Say_Word"
         android:textSize="40sp"/>
-
 
 </RelativeLayout>

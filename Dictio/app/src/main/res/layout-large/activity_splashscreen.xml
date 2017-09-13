@@ -27,5 +27,4 @@
         android:layout_centerVertical="true"
         android:src="@drawable/promentor_fresh" />
 
-
 </RelativeLayout>
