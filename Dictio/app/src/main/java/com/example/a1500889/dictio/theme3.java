@@ -105,6 +105,7 @@ public class theme3 extends AppCompatActivity {
             if (convoStep == getResources().getStringArray(R.array.testConvo).length){
                 layout.setBackgroundColor(Color.GREEN);
                 btnSpeak.setEnabled(false);
+                convoStep = 0;
             }else {
                 conversation();
             }
@@ -116,6 +117,7 @@ public class theme3 extends AppCompatActivity {
     }
 
     public void conversation(){
+        btnSpeak.setEnabled(true);
         String[] Convo = getResources().getStringArray(R.array.testConvo);
         String selected = Convo[convoStep];
         text.setText(selected);
