@@ -4,16 +4,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
-
     <TextView
         android:id="@+id/textToSpeak"
         android:layout_width="wrap_content"
@@ -23,21 +13,24 @@
         android:text="@string/empty" />
 
     <Button
-        android:id="@+id/say"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/button"
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/textToSpeak"
-        android:text="@string/say" />
+        android:text="Start conversation" />
 
-    <Button
-        android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/say"
-        android:text="@string/choose" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
         android:id="@+id/txtSpeechInput"
@@ -45,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/textView2"
         android:textSize="26sp"
         android:textStyle="normal" />
 
@@ -61,6 +55,8 @@
         android:id="@+id/textView2" />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/button"
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,5 +64,5 @@
         android:layout_below="@+id/textView2"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:text="Bress meh" />
+        android:text="Answer" />
 </RelativeLayout>
