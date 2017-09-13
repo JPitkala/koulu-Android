@@ -34,7 +34,7 @@
         android:layout_marginStart="20dp"
         android:onClick="gotoTheme1"
         android:text="@string/topic1"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/button3"
@@ -47,7 +47,7 @@
         android:layout_marginStart="20dp"
         android:onClick="gotoSpell"
         android:text="@string/topic2"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/button4"
@@ -60,5 +60,5 @@
         android:layout_marginStart="20dp"
         android:onClick="gotoTheme3"
         android:text="@string/topic3"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 </RelativeLayout>

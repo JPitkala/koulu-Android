@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="testConvo">
+        <item>Hello</item>
+        <item>Would you like a cup of coffee</item>
+        <item>here you go</item>
+    </string-array>
+
+    <string-array name="testConvoCorrect">
+        <item>Hello</item>
+        <item>Yes please</item>
+        <item>Thank you</item>
+    </string-array>
+</resources>

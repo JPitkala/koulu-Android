@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout1">
@@ -21,13 +22,16 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/empty" />
+        android:layout_below="@id/btnSpeak"
+        android:text="@string/empty"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/textToSpeak"
         android:text="@string/say"
         android:textSize="40sp"
@@ -47,9 +51,10 @@
         android:id="@+id/txtSpeechInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="135dp"
         android:textSize="40sp"
         android:textStyle="normal" />
 
@@ -68,11 +73,11 @@
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/txtSpeechInput"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:text="Bress meh"
+        android:text="@string/Say_Word"
         android:textSize="40sp"/>
 
 </RelativeLayout>

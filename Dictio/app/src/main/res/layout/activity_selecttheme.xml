@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/promentorSite">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -20,10 +21,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
         android:layout_marginTop="40sp"
+        android:layout_marginBottom="40sp"
         android:layout_centerHorizontal="true"
-        android:text="@string/topic" />
+        android:text="@string/topic"
+        android:textSize="30sp" />
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,9 +35,12 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textView"
         android:onClick="gotoTheme1"
-        android:text="@string/topic1" />
+        android:text="@string/topic1"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginBottom="20dp"/>
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,9 +50,12 @@
         android:layout_marginEnd="20sp"
         android:layout_marginStart="20sp"
         android:onClick="gotoSpell"
-        android:text="@string/topic2" />
+        android:text="@string/topic2"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginBottom="20dp"/>
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,5 +65,8 @@
         android:layout_marginEnd="20sp"
         android:layout_marginStart="20sp"
         android:onClick="gotoTheme3"
-        android:text="@string/topic3" />
+        android:text="@string/topic3"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginBottom="20dp"/>
 </RelativeLayout>
