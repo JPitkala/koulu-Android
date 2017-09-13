@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:id="@+id/layout2">
+    android:id="@+id/layout2"
+    android:background="@color/promentorSite">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -21,9 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/empty" />
+        android:text="@string/empty"
+        android:textSize="20sp"/>
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/say"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,15 +33,21 @@
         android:layout_below="@id/textToSpeak"
         android:text="@string/say"
         android:layout_alignEnd="@+id/choose"
-        android:layout_alignStart="@+id/choose" />
+        android:layout_alignStart="@+id/choose"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/say"
-        android:text="@string/choose" />
+        android:text="@string/choose"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/txtSpeechInput"
@@ -58,11 +66,11 @@
         android:layout_marginTop="20dp"
         android:layout_below="@id/toolbar"
         android:text="@string/tap_on_mic"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/textView2" />
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +78,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:text="@string/Say_Word" />
+        android:text="@string/Say_Word"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>/>
 
 
 </RelativeLayout>
