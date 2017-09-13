@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout3">
+    android:id="@+id/layout3"
+    android:background="@color/promentorSite">
 
     <TextView
         android:id="@+id/textToSpeak"
@@ -15,6 +16,8 @@
         android:text="@string/empty" />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/button"
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/textView2"
         android:textSize="26sp"
         android:textStyle="normal" />
 
@@ -54,6 +58,8 @@
         android:id="@+id/textView2" />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/button"
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
