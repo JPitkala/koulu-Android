@@ -30,7 +30,6 @@ public class theme3 extends AppCompatActivity {
     Button  buttonSay;
     Button  buttonChoose;
     TextView text;
-    Random random = new Random();
     TextView txtSpeechInput;
     Button btnSpeak;
     RelativeLayout layout;
