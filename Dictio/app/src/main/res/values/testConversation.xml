@@ -11,4 +11,16 @@
         <item>Yes please</item>
         <item>Thank you</item>
     </string-array>
+
+    <string-array name="testConvoCorrectAlt">
+        <item>Hi</item>
+        <item>Yeah</item>
+        <item>Thanks</item>
+    </string-array>
+
+    <string-array name="testConvoCorrectAlt2">
+        <item>Greetings</item>
+        <item>Yes</item>
+        <item>Nice</item>
+    </string-array>
 </resources>
