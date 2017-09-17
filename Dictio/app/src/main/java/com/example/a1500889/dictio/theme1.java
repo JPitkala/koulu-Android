@@ -54,6 +54,8 @@ public class theme1 extends AppCompatActivity {
             }
         });
 
+        btnSpeak.setEnabled(false);
+
         t = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -79,6 +81,7 @@ public class theme1 extends AppCompatActivity {
                 int randselect = random.nextInt((TestWords.length - 0));
                 String selected = TestWords[randselect];
                 text.setText(selected);
+                btnSpeak.setEnabled(true);
 
             }
         });

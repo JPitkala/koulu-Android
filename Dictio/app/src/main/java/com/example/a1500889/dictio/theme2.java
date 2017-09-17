@@ -65,6 +65,8 @@ public class theme2 extends AppCompatActivity {
             }
         });
 
+        btnSpeak.setEnabled(false);
+
         buttonSay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +83,7 @@ public class theme2 extends AppCompatActivity {
                 int randselect = random.nextInt((TestPhrases.length - 0));
                 String selected = TestPhrases[randselect];
                 text.setText(selected);
+                btnSpeak.setEnabled(true);
 
             }
         });
