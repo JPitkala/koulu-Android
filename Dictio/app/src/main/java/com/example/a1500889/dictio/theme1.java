@@ -95,7 +95,7 @@ public class theme1 extends AppCompatActivity {
     public void checkInput(){
         String input = txtSpeechInput.getText().toString();
         String correct = text.getText().toString();
-        if (correct.equals(input)){
+        if (correct.equalsIgnoreCase(input)){
           //  layout.setBackgroundColor(Color.GREEN);
             txtSpeechInput.setTextColor(Color.GREEN);
         }else {

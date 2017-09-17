@@ -7,10 +7,13 @@
     <string name="topic3">Conversation</string>
 
     <string name="choose">Choose word</string>
+    <string name="choose_sentence">Choose sentence</string>
     <string name="say">Listen word</string>
     <string name="empty">" "</string>
     <string name="topic_selection">Topics</string>
     <string name="Say_Word">Say Word</string>
+    <string name="Say_Sentence">Say</string>
+    <string name="Listen_Sentence">Listen</string>
 
     <string name="speech_prompt">Say something&#8230;</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
