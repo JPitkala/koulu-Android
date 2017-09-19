@@ -18,19 +18,30 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait">
         </activity>
 
-        <activity android:name=".selectThemeActivity">
+        <activity android:name=".selectThemeActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
         </activity>
 
-        <activity android:name=".theme1">
+        <activity android:name=".theme1"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".theme2">
+        <activity android:name=".theme2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".theme3">
+        <activity android:name=".theme3"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
