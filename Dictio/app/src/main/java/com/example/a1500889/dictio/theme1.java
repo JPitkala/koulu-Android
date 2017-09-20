@@ -50,7 +50,7 @@ public class theme1 extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new         Intent(getApplicationContext(),selectThemeActivity.class));
+                startActivity(new         Intent(getApplicationContext(),selectExerciseActivity.class));
             }
         });
 
