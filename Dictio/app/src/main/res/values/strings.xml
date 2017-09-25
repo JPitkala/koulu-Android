@@ -11,9 +11,11 @@
     <string name="say">Listen word</string>
     <string name="empty">" "</string>
     <string name="topic_selection">Topics</string>
+    <string name="login">Login</string>
     <string name="Say_Word">Say Word</string>
     <string name="Say_Sentence">Say</string>
     <string name="Listen_Sentence">Listen</string>
+    <string name="Answer">Answer</string>
 
     <string name="speech_prompt">Say something&#8230;</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/promentorSite">
 
     <TextView
         android:id="@+id/textToSpeak"
@@ -12,8 +14,7 @@
         android:layout_centerVertical="true"
         android:text="@string/empty" />
 
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:background="@drawable/button"
         android:id="@+id/start"
         android:layout_width="wrap_content"
@@ -54,8 +55,7 @@
         android:textStyle="normal"
         android:id="@+id/textView2" />
 
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:background="@drawable/button"
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"

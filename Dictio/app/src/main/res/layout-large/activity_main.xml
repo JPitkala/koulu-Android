@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.a1500889.dictio.MainActivity">
+    tools:context="com.example.a1500889.dictio.MainActivity"
+    android:background="@color/promentorSite">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -17,8 +18,9 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="8dp" />
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button2"
+        android:background="@drawable/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -26,7 +28,7 @@
         android:elevation="0dp"
         android:onClick="gotoSelectTheme"
         android:text="@string/topic_selection"
-        android:textSize="70sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
