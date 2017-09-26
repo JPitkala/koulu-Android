@@ -23,7 +23,7 @@
             android:screenOrientation="sensorPortrait">
         </activity>
 
-        <activity android:name=".selectThemeActivity"
+        <activity android:name=".selectExerciseActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
 

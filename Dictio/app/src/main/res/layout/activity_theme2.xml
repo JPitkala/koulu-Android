@@ -19,6 +19,7 @@
     <TextView
         android:id="@+id/textToSpeak"
         android:layout_width="wrap_content"
+        android:maxWidth="350dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -30,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_below="@id/textToSpeak"
+        android:layout_below="@+id/textToSpeak"
         android:text="@string/Listen_Sentence"
         android:layout_alignEnd="@+id/choose"
         android:layout_alignStart="@+id/choose"
@@ -44,7 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/say"
+        android:layout_below="@+id/txtSpeechInput"
+        android:layout_marginTop="15dp"
         android:text="@string/choose_sentence"
         android:background="@drawable/button"
         android:textSize="20sp"/>
@@ -52,6 +54,7 @@
     <TextView
         android:id="@+id/txtSpeechInput"
         android:layout_width="wrap_content"
+        android:maxWidth="350dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -64,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/toolbar"
+        android:layout_below="@+id/toolbar"
         android:text="@string/tap_on_mic"
         android:textSize="20sp"
         android:textStyle="normal"
@@ -74,13 +77,11 @@
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtSpeechInput"
+        android:layout_below="@+id/say"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:text="@string/Say_Sentence"
         android:background="@drawable/button"
-        android:textSize="20sp"/>/>
+        android:textSize="20sp"/>
 
 
 </RelativeLayout>

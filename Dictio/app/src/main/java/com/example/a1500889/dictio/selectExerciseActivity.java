@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-public class selectThemeActivity extends AppCompatActivity {
+public class selectExerciseActivity extends AppCompatActivity {
 
 
     TextView text;
@@ -15,7 +15,7 @@ public class selectThemeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_selecttheme);
+    setContentView(R.layout.activity_selectexercise);
 
         text = (TextView)findViewById(R.id.textView);
 
