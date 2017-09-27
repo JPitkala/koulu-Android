@@ -26,7 +26,7 @@
         android:layout_centerVertical="true"
         android:layout_below="@id/textView2"
         android:layout_marginTop="15dp"
-        android:text="Start conversation"
+        android:text="@string/start_conversation"
         android:textSize="20sp"/>
 
     <android.support.v7.widget.Toolbar
@@ -70,6 +70,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textToSpeak"
         android:layout_marginTop="20dp"
-        android:text="Answer"
+        android:text="@string/Answer"
         android:textSize="20sp"/>
 </RelativeLayout>

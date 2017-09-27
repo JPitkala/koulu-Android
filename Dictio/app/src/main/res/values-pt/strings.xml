@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Answer">Responder</string>
+    <string name="Listen_Sentence">Ouvir</string>
+    <string name="Say_Sentence">Dizer</string>
+    <string name="Say_Word">Dizer palavra</string>
+    <string name="choose">Escolher palavra</string>
+    <string name="choose_sentence">Escolher frase</string>
+    <string name="loginButton">Entrar</string>
+    <string name="password">Palavra-passe</string>
+    <string name="say">Ouvir palavra</string>
+    <string name="speech_not_supported">Desculpe! O nosso sistema não suporta a entrada de voz</string>
+    <string name="speech_prompt">Diga alguma coisa</string>
+    <string name="tap_on_mic">Toque no microfone para falar</string>
+    <string name="topic">Escolher tópico</string>
+    <string name="topic1">Palavras</string>
+    <string name="topic2">Frases</string>
+    <string name="topic3">Conversação</string>
+    <string name="topic_selection">Tópico</string>
+    <string name="user">Utilizador</string>
+    <string name="start_conversation">Iniciar conversa</string>
+</resources>

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Dictio</string>
-    <string name="promentor">PROMENTOR SOLUTIONS</string>
+    <string name="app_name" translatable="false">Dictio</string>
+    <string name="promentor" translatable="false">PROMENTOR SOLUTIONS</string>
     <string name="topic">CHOOSE TOPIC</string>
     <string name="topic1">WORDS</string>
     <string name="topic2">SENTENCES</string>
@@ -9,9 +9,8 @@
     <string name="choose">Choose word</string>
     <string name="choose_sentence">Choose sentence</string>
     <string name="say">Listen word</string>
-    <string name="empty">" "</string>
+    <string name="empty" translatable="false">" "</string>
     <string name="topic_selection">Topics</string>
-    <string name="login">Login</string>
     <string name="Say_Word">Say Word</string>
     <string name="Say_Sentence">Say</string>
     <string name="Listen_Sentence">Listen</string>
@@ -20,5 +19,10 @@
     <string name="speech_prompt">Say something&#8230;</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
     <string name="tap_on_mic">Tap on mic to speak</string>
+
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="start_conversation">Start conversation</string>
 
 </resources>
