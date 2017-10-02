@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                 String passWord = password.getText().toString().trim();
 
                 if(userName.equals("admin") && passWord.equals("passu")) {
-                    startActivity(new Intent(LoginActivity.this, SplashScreen.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }else {
                     Toast.makeText(LoginActivity.this, "Incorrect username / password", Toast.LENGTH_LONG).show();
                 }
