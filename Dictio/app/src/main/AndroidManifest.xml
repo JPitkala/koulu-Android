@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a1500889.dictio">
-    
-    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    package="com.kansio.a1500889.dictio">
 
     <application
         android:allowBackup="true"
@@ -11,7 +9,7 @@
         android:roundIcon="@mipmap/pr_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SplashScreen"
+        <activity android:name="dictio.kansio.files.dictio.SplashScreen"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,34 +18,34 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name="dictio.kansio.files.dictio.LoginActivity"
             android:configChanges="orientation"
             android:screenOrientation="sensorPortrait">
 
         </activity>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="dictio.kansio.files.dictio.MainActivity"
             android:configChanges="orientation"
             android:screenOrientation="sensorPortrait">
         </activity>
 
-        <activity android:name=".selectExerciseActivity"
+        <activity android:name="dictio.kansio.files.dictio.selectExerciseActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <activity android:name=".theme1"
+        <activity android:name="dictio.kansio.files.dictio.theme1"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".theme2"
+        <activity android:name="dictio.kansio.files.dictio.theme2"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".theme3"
+        <activity android:name="dictio.kansio.files.dictio.theme3"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
         </activity>

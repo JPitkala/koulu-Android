@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.a1500889.dictio.MainActivity"
+    tools:context="com.kansio.a1500889.dictio.dictorio.kansio.a1500889.dictio.MainActivity"
 
     android:background="@color/promentorSite">
 
