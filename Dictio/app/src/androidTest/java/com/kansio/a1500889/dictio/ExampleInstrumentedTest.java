@@ -1,4 +1,4 @@
-package com.example.a1500889.dictio;
+package kansio.kansio.a1500889.dictio;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.a1500889.dictio", appContext.getPackageName());
+        assertEquals("com.kansio.a1500889.dictio", appContext.getPackageName());
     }
 }

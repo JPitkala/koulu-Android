@@ -1,4 +1,4 @@
-package com.example.a1500889.dictio;
+package kansio.kansio.a1500889.dictio;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

@@ -1,10 +1,12 @@
-package com.example.a1500889.dictio;
+package dictio.kansio.files.dictio;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.kansio.a1500889.dictio.R;
 
 public class MainActivity extends AppCompatActivity {
 
