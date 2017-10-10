@@ -1,4 +1,4 @@
-package dictio.kansio.files.dictio;
+package com.kansio.a1500889.dictio;
 
 
 import android.content.Intent;
@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.kansio.a1500889.dictio.R;
 
 /**
  * Created by Joonas on 27.9.2017.
@@ -43,11 +41,8 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(LoginActivity.this, "Incorrect username / password", Toast.LENGTH_LONG).show();
                 }
-
             }
 
         });
-
     }
-
 }

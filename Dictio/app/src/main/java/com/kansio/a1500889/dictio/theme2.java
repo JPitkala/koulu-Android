@@ -1,4 +1,4 @@
-package dictio.kansio.files.dictio;
+package com.kansio.a1500889.dictio;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -7,6 +7,7 @@ import java.util.Random;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -17,8 +18,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.kansio.a1500889.dictio.R;
 
 
 public class theme2 extends AppCompatActivity {
@@ -89,10 +88,6 @@ public class theme2 extends AppCompatActivity {
 
             }
         });
-
-
-
-
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -102,14 +97,17 @@ public class theme2 extends AppCompatActivity {
         });
 }
 
-
     public void checkInput() {
         String input = txtSpeechInput.getText().toString();
         String correct = text.getText().toString();
         if (correct.equalsIgnoreCase(input)) {
-            layout.setBackgroundColor(Color.GREEN);
+            Drawable draw = getResources().getDrawable(R.drawable.check);
+            txtSpeechInput.setCompoundDrawablesWithIntrinsicBounds(null, null, draw, null);
+            txtSpeechInput.setTextColor(Color.GREEN);
         } else {
-            layout.setBackgroundColor(Color.RED);
+            Drawable draw = getResources().getDrawable(R.drawable.wrong);
+            txtSpeechInput.setCompoundDrawablesWithIntrinsicBounds(null, null, draw, null);
+            txtSpeechInput.setTextColor(Color.RED);
         }
     }
 
@@ -129,8 +127,6 @@ public class theme2 extends AppCompatActivity {
                     getString(R.string.speech_not_supported),
                     Toast.LENGTH_SHORT).show();
         }
-
-
     }
     /**
      * Receiving speech input
@@ -150,7 +146,6 @@ public class theme2 extends AppCompatActivity {
                 checkInput();
                 break;
             }
-
         }
     }
 }

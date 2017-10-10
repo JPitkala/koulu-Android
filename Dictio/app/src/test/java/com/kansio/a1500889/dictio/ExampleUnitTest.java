@@ -1,4 +1,4 @@
-package dictio.kansio.files.dictio;
+package com.kansio.a1500889.dictio;
 
 import org.junit.Test;
 
