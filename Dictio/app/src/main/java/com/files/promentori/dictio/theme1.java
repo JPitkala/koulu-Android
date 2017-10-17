@@ -1,4 +1,4 @@
-package com.example.a1500889.dictio;
+package com.files.promentori.dictio;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;

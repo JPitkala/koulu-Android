@@ -1,4 +1,4 @@
-package com.example.a1500889.dictio;
+package com.files.promentori.dictio;
 
 
 import android.content.Intent;
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 String userName = username.getText().toString().trim();
                 String passWord = password.getText().toString().trim();
 
-                if(userName.equals("admin") && passWord.equals("passu")) {
+                if(userName.equals("user") && passWord.equals("haagahelia1")) {
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }else {
                     Toast.makeText(LoginActivity.this, "Incorrect username / password", Toast.LENGTH_LONG).show();

@@ -1,47 +1,51 @@
-package com.example.a1500889.dictio;
+package com.files.promentori.dictio;
+
+/**
+ * Created by a1500908 on 6.9.2017.
+ */
+
+import android.graphics.Color;
+import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.speech.RecognizerIntent;
 
 import java.util.ArrayList;
 import java.util.Locale;
-import java.util.Random;
 
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.speech.RecognizerIntent;
-import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Button;
-import android.widget.Toast;
-
-
-public class theme2 extends AppCompatActivity {
+public class theme3 extends AppCompatActivity {
 
     TextToSpeech t;
-    Button buttonSay;
-    Button buttonChoose;
+    Button  buttonSay;
+    Button  buttonChoose;
     TextView text;
-    Random random = new Random();
     TextView txtSpeechInput;
     Button btnSpeak;
     RelativeLayout layout;
-    private final int REQ_CODE_SPEECH_INPUT = 100;
+    int convoStep;
+    final int REQ_CODE_SPEECH_INPUT = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theme2);
-
-        buttonSay = (Button) findViewById(R.id.say);
-        buttonChoose = (Button) findViewById(R.id.choose);
-        text = (TextView) findViewById(R.id.textToSpeak);
+        setContentView(R.layout.activity_theme3);
+        buttonSay=(Button)findViewById(R.id.start);
+        buttonChoose = (Button)findViewById(R.id.choose);
+        text = (TextView)findViewById(R.id.textToSpeak);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
-        layout = (RelativeLayout) findViewById(R.id.layout2);
+        layout = (RelativeLayout) findViewById(R.id.layout3);
+        convoStep = 0;
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -59,35 +63,18 @@ public class theme2 extends AppCompatActivity {
         t = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-                if (status != TextToSpeech.ERROR) {
+                if(status != TextToSpeech.ERROR) {
                     t.setLanguage(Locale.UK);
                 }
             }
         });
 
-        btnSpeak.setEnabled(false);
-
         buttonSay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = text.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak, Toast.LENGTH_SHORT);
-                t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                conversation();
             }
         });
-
-        buttonChoose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String[] TestPhrases = getResources().getStringArray(R.array.testphrases);
-                int randselect = random.nextInt((TestPhrases.length - 0));
-                String selected = TestPhrases[randselect];
-                text.setText(selected);
-                btnSpeak.setEnabled(true);
-
-            }
-        });
-
 
 
 
@@ -98,17 +85,43 @@ public class theme2 extends AppCompatActivity {
                 promptSpeechInput();
             }
         });
-}
+    }
+
 
 
     public void checkInput() {
+        String[] ConvoCorrect = getResources().getStringArray(R.array.testConvoCorrect);
+        String[] ConvoCorrectAlt = getResources().getStringArray(R.array.testConvoCorrectAlt);
+        String[] ConvoCorrectAlt2 = getResources().getStringArray(R.array.testConvoCorrectAlt2);
         String input = txtSpeechInput.getText().toString();
-        String correct = text.getText().toString();
-        if (correct.equalsIgnoreCase(input)) {
-            layout.setBackgroundColor(Color.GREEN);
+        String correct = ConvoCorrect[convoStep];
+        String correctAlt = ConvoCorrectAlt[convoStep];
+        String correctAlt2 = ConvoCorrectAlt2[convoStep];
+        if (correct.equalsIgnoreCase(input)||correctAlt.equalsIgnoreCase(input)||correctAlt2.equalsIgnoreCase(input)) {
+            convoStep = convoStep + 1;
+            if (convoStep == getResources().getStringArray(R.array.testConvo).length){
+                layout.setBackgroundColor(Color.GREEN);
+                btnSpeak.setEnabled(false);
+                convoStep = 0;
+            }else {
+                conversation();
+            }
         } else {
-            layout.setBackgroundColor(Color.RED);
+            String toSpeak = "Sorry i do not understand";
+            Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
+            t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
         }
+    }
+
+    public void conversation(){
+        btnSpeak.setEnabled(true);
+        String[] Convo = getResources().getStringArray(R.array.testConvo);
+        String selected = Convo[convoStep];
+        text.setText(selected);
+        String toSpeak = text.getText().toString();
+        Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT);
+        t.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+
     }
 
     private void promptSpeechInput() {
@@ -119,7 +132,6 @@ public class theme2 extends AppCompatActivity {
         intent.putExtra(RecognizerIntent.EXTRA_PROMPT,
                 getString(R.string.speech_prompt));
         intent.putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, true);
-
         try {
             startActivityForResult(intent, REQ_CODE_SPEECH_INPUT);
         } catch (ActivityNotFoundException a) {
@@ -151,4 +163,9 @@ public class theme2 extends AppCompatActivity {
 
         }
     }
-}
+
+    }
+
+
+
+
