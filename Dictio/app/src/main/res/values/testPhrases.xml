@@ -2,6 +2,7 @@
 <resources
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingTranslation" >
+
     <string-array name="testphrases">
         <item>Please come in</item>
         <item>Go up the stairs</item>

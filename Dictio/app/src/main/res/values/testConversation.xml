@@ -2,6 +2,7 @@
 <resources
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingTranslation" >
+
     <string-array name="testConvo">
         <item>Hello</item>
         <item>Would you like a cup of coffee</item>

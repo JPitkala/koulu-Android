@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/promentorSite">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -24,7 +25,7 @@
         android:text="@string/topic"
         android:textSize="40sp"/>
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,11 +33,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:background="@drawable/button"
         android:onClick="gotoTheme1"
         android:text="@string/topic1"
         android:textSize="60sp" />
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,11 +47,14 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
         android:onClick="gotoSpell"
         android:text="@string/topic2"
         android:textSize="60sp" />
 
-    <Button
+    <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,6 +63,7 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:background="@drawable/button"
         android:onClick="gotoTheme3"
         android:text="@string/topic3"
         android:textSize="60sp" />
