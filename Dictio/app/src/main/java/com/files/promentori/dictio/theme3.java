@@ -33,7 +33,6 @@ public class theme3 extends AppCompatActivity {
     int convoStep;
     final int REQ_CODE_SPEECH_INPUT = 100;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +44,6 @@ public class theme3 extends AppCompatActivity {
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
         layout = (RelativeLayout) findViewById(R.id.layout3);
         convoStep = 0;
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -76,8 +74,6 @@ public class theme3 extends AppCompatActivity {
             }
         });
 
-
-
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -86,8 +82,6 @@ public class theme3 extends AppCompatActivity {
             }
         });
     }
-
-
 
     public void checkInput() {
         String[] ConvoCorrect = getResources().getStringArray(R.array.testConvoCorrect);
@@ -139,8 +133,6 @@ public class theme3 extends AppCompatActivity {
                     getString(R.string.speech_not_supported),
                     Toast.LENGTH_SHORT).show();
         }
-
-
     }
     /**
      * Receiving speech input
@@ -163,7 +155,6 @@ public class theme3 extends AppCompatActivity {
 
         }
     }
-
     }
 
 

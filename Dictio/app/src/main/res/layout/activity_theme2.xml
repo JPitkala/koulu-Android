@@ -17,38 +17,26 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
+        android:text="@string/tap_on_mic"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
         android:id="@+id/textToSpeak"
         android:layout_width="wrap_content"
         android:maxWidth="350dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/empty"
-        android:textSize="20sp"/>
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/say"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/textToSpeak"
-        android:text="@string/Listen_Sentence"
-        android:layout_alignEnd="@+id/choose"
-        android:layout_alignStart="@+id/choose"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button"
-        android:textSize="20sp"/>
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtSpeechInput"
-        android:layout_marginTop="15dp"
-        android:text="@string/choose_sentence"
-        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:text="@string/empty"
         android:textSize="20sp"/>
 
     <TextView
@@ -58,20 +46,34 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:textSize="26sp"
         android:textStyle="normal" />
 
-    <TextView
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/toolbar"
-        android:text="@string/tap_on_mic"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        android:id="@+id/textView2" />
+        android:layout_below="@+id/textToSpeak"
+        android:layout_marginTop="15dp"
+        android:text="@string/choose_sentence"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/choose"
+        android:text="@string/Listen_Sentence"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:textSize="20sp"/>
 
     <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/btnSpeak"

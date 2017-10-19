@@ -17,34 +17,26 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
+        android:text="@string/tap_on_mic"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+
+    <TextView
         android:id="@+id/textToSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/empty" />
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/say"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/textToSpeak"
-        android:text="@string/say"
-        android:background="@drawable/button"
-        android:textSize="40sp"
-        android:layout_alignEnd="@+id/choose"
-        android:layout_alignStart="@+id/choose" />
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/say"
-        android:text="@string/choose"
-        android:background="@drawable/button"
-        android:textSize="40sp" />
+        android:layout_below="@+id/txtSpeechInput"
+        android:layout_marginTop="20dp"
+        android:text="@string/empty"
+        android:textSize="40sp"/>
 
     <TextView
         android:id="@+id/txtSpeechInput"
@@ -57,25 +49,38 @@
         android:textSize="40sp"
         android:textStyle="normal" />
 
-    <TextView
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/toolbar"
-        android:text="@string/tap_on_mic"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textToSpeak"
+        android:text="@string/choose"
+        android:background="@drawable/button"
+        android:textSize="40sp" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/choose"
+        android:text="@string/say"
+        android:background="@drawable/button"
         android:textSize="40sp"
-        android:textStyle="normal"
-        android:id="@+id/textView2" />
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
 
     <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/btnSpeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtSpeechInput"
+        android:layout_below="@+id/say"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:text="@string/Say_Word"
         android:background="@drawable/button"
         android:textSize="40sp"/>

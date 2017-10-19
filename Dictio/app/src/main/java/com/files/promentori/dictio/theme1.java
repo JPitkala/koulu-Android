@@ -3,6 +3,7 @@ package com.files.promentori.dictio;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -100,9 +101,11 @@ public class theme1 extends AppCompatActivity {
         String correct = text.getText().toString();
         if (correct.equalsIgnoreCase(input)){
           //  layout.setBackgroundColor(Color.GREEN);
-            txtSpeechInput.setTextColor(Color.GREEN);
+            TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
+            textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.checked, 0);
         }else {
-            txtSpeechInput.setTextColor(Color.RED);
+            TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
+            textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.wrong, 0);
           //  layout.setBackgroundColor(Color.RED);
         }
     }

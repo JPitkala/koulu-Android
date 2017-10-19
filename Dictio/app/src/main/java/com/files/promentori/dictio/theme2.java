@@ -105,9 +105,11 @@ public class theme2 extends AppCompatActivity {
         String input = txtSpeechInput.getText().toString();
         String correct = text.getText().toString();
         if (correct.equalsIgnoreCase(input)) {
-            layout.setBackgroundColor(Color.GREEN);
+            TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
+            textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.checked, 0);
         } else {
-            layout.setBackgroundColor(Color.RED);
+            TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
+            textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.wrong, 0);
         }
     }
 

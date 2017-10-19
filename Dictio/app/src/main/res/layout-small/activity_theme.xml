@@ -15,7 +15,6 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-
     <TextView
         android:id="@+id/textToSpeak"
         android:layout_width="wrap_content"
@@ -23,26 +22,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/empty" />
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/say"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/textToSpeak"
-        android:text="@string/say"
-        android:background="@drawable/button"
-        android:layout_alignEnd="@+id/choose"
-        android:layout_alignStart="@+id/choose" />
-
-    <Button style="@style/Widget.AppCompat.Button.Colored"
-        android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/say"
-        android:text="@string/choose"
-        android:background="@drawable/button" />
 
     <TextView
         android:id="@+id/txtSpeechInput"
@@ -65,6 +44,26 @@
         android:textSize="15sp"
         android:textStyle="normal"
         android:id="@+id/textView2" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textToSpeak"
+        android:text="@string/say"
+        android:background="@drawable/button"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/say"
+        android:text="@string/choose"
+        android:background="@drawable/button" />
 
     <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/btnSpeak"
