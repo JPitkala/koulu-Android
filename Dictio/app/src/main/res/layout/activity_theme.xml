@@ -49,6 +49,38 @@
         android:textSize="26sp"
         android:textStyle="normal" />
 
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/slash"
+        android:layout_alignBottom="@+id/slash"
+        android:layout_toStartOf="@+id/slash"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/maxscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maxscore"
+        android:textSize="30sp"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/btnSpeak"
+        android:layout_toEndOf="@+id/slash"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/slash"
+        android:layout_alignBaseline="@+id/maxscore"
+        android:layout_alignBottom="@+id/maxscore"
+        android:layout_centerHorizontal="true" />
+
     <Button style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/choose"
         android:layout_width="wrap_content"
@@ -85,4 +117,4 @@
         android:background="@drawable/button"
         android:textSize="20sp"/>
 
-    </RelativeLayout>
+</RelativeLayout>
