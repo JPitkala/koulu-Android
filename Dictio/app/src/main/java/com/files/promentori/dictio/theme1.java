@@ -30,7 +30,10 @@ public class theme1 extends AppCompatActivity {
     Button btnSpeak;
     RelativeLayout layout;
     ArrayList<String> words;
+    TextView Score;
+    TextView MaxScore;
     int wordcount;
+    int intscore;
     final int REQ_CODE_SPEECH_INPUT = 100;
 
     @Override
@@ -44,6 +47,9 @@ public class theme1 extends AppCompatActivity {
         btnSpeak = (Button) findViewById(R.id.btnSpeak);
         layout = (RelativeLayout) findViewById(R.id.layout1);
         words = new ArrayList<>();
+        Score = (TextView) findViewById(R.id.score);
+        MaxScore = (TextView) findViewById(R.id.maxscore);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -60,6 +66,8 @@ public class theme1 extends AppCompatActivity {
 
         String[] tempList = getResources().getStringArray(R.array.testwords);
         wordcount = tempList.length;
+        MaxScore.setText((Integer.toString(wordcount)));
+        Score.setText(Integer.toString(0));
         for(String x : tempList){
             words.add(x);
         }
@@ -87,7 +95,7 @@ public class theme1 extends AppCompatActivity {
         buttonChoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int randselect = random.nextInt((words.size() - 0));
+                int randselect = random.nextInt((words.size()));
                 String selected = words.get(randselect);
                 text.setText(selected);
                 btnSpeak.setEnabled(true);
@@ -112,6 +120,9 @@ public class theme1 extends AppCompatActivity {
             TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
             textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.checked, 0);
             words.remove(correct);
+            intscore++;
+            int result = intscore;
+            Score.setText(Integer.toString(result));
         }else {
             TextView textView = (TextView) findViewById(R.id.txtSpeechInput);
             textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.wrong, 0);
