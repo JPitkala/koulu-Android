@@ -50,21 +50,15 @@
         android:textSize="26sp"
         android:textStyle="normal" />
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textToSpeak"
         android:layout_marginTop="15dp"
         android:text="@string/choose_sentence"
-        android:background="@drawable/button"
-        android:textSize="20sp"/>
+        style="@style/button"/>
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/say"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_below="@+id/choose"
         android:text="@string/Listen_Sentence"
@@ -72,18 +66,13 @@
         android:layout_alignStart="@+id/choose"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/button"
-        android:textSize="20sp"/>
+        style="@style/button"/>
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/btnSpeak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/say"
-        android:layout_centerHorizontal="true"
         android:text="@string/Say_Sentence"
-        android:background="@drawable/button"
-        android:textSize="20sp"/>
+        style="@style/button"/>
 
 
 </RelativeLayout>

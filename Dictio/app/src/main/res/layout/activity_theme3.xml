@@ -40,18 +40,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp" />
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/start"
-        android:background="@drawable/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/start_conversation"
         android:textSize="20sp"
         android:layout_marginBottom="18dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:layout_above="@+id/btnSpeak"
-        android:layout_centerHorizontal="true" />
+        style="@style/button" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -63,14 +60,9 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <Button
-        style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/btnSpeak"
-        android:background="@drawable/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/Answer"
-        android:textSize="20sp"
         android:layout_marginBottom="99dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        style="@style/button" />
 </RelativeLayout>

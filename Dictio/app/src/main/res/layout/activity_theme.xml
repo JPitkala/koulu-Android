@@ -81,40 +81,29 @@
         android:layout_alignBottom="@+id/maxscore"
         android:layout_centerHorizontal="true" />
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/textToSpeak"
         android:text="@string/choose"
-        android:textSize="20sp"
-        android:background="@drawable/button"/>
+        style="@style/button"/>
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/say"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_below="@+id/choose"
         android:text="@string/say"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        android:textSize="20sp"
         android:layout_alignEnd="@+id/choose"
         android:layout_alignStart="@+id/choose"
-        android:background="@drawable/button" />
+        style="@style/button" />
 
-    <Button style="@style/Widget.AppCompat.Button.Colored"
+    <Button
         android:id="@+id/btnSpeak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/say"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="@string/Say_Word"
-        android:background="@drawable/button"
-        android:textSize="20sp"/>
+        style="@style/button"/>
 
 </RelativeLayout>

@@ -14,5 +14,14 @@
         </item>
 
     </style>
+    <style name="button" parent="Widget.AppCompat.Button.Colored">
+        <!-- Teema käyttöliittymän painikkeille-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+    </style>
 
 </resources>
