@@ -64,7 +64,7 @@ public class theme1 extends AppCompatActivity {
             }
         });
 
-        String[] tempList = getResources().getStringArray(R.array.testwords);
+        String[] tempList = (String[]) getIntent().getExtras().get("array");
         wordcount = tempList.length;
         MaxScore.setText((Integer.toString(wordcount)));
         Score.setText(Integer.toString(0));

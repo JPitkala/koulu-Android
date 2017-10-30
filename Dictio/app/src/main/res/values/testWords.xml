@@ -31,6 +31,9 @@
         <item>meeting</item>
         <item>misplaced</item>
         <item>new</item>
+    </string-array>
+
+    <string-array name="testwords2">
         <item>north</item>
         <item>open</item>
         <item>part</item>
